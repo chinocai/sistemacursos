@@ -13,7 +13,7 @@ use \App\Models\Student;
 use \App\Models\Certificate;
 use \App\Models\Academy_course_type;
 use \App\Models\Academy_user;
-use \App\Models\Course_Student;
+use \App\Models\Course_student;
 
 
 class DatabaseSeeder extends Seeder
@@ -84,22 +84,22 @@ class DatabaseSeeder extends Seeder
             'course_type_id'=> 2,
             'academy_id'=> 4,
         ]);
-        Course_Student::Create([
+        Course_student::Create([
             'student_id'=> 1,
             'course_id'=> 1,
             'attendance'=> true,
         ]);
-        Course_Student::Create([
+        Course_student::Create([
             'student_id'=> 1,
             'course_id'=> 2,
             'attendance'=> false,
         ]);
-        Course_Student::Create([
+        Course_student::Create([
             'student_id'=> 3,
             'course_id'=> 10,
             'attendance'=> true,
         ]);
-        Course_Student::Create([
+        Course_student::Create([
             'student_id'=> 15,
             'course_id'=> 6,
             'attendance'=> true,
